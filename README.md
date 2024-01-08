@@ -16,12 +16,15 @@ name: string
 add worker to shop:
 curl localhost:8080/shop/addWorker/{shop}/{worker}
 
-shop: int // Id of shop 
+shop: int // Id of shop
+
 worker: int // Id of worker
 
 add worker to shift at shop:
 curl localhost:8080/shift/create/{shop}/{worker}/{hours}
 
-shop: int // Id of shop 
+shop: int // Id of shop
+
 worker: int // Id of worker
+
 hours: int // hours a given shift should be
